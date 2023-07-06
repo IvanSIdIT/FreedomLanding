@@ -1,0 +1,23 @@
+.hero-wrapper {
+  padding: 30px 0px 0px 165px;
+  background: radial-gradient(
+      838.19% 378.3% at 69.44% -79.86%,
+      rgba(31, 35, 39, 0) 0%,
+      #191c1f 47.89%,
+      rgba(31, 35, 39, 0) 100%
+    ),
+    url("../../images/heroBG.avif");
+}
+
+.header-wrapper {
+  margin: 0px 0px 125px 0px;
+}
+
+.hero {
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
