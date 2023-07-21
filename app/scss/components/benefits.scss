@@ -1,6 +1,9 @@
 .benefits-wrapper {
   background: #191c1f;
   padding: 60px 0px 60px 0px;
+  @media (max-width: 895px) {
+    padding: 40px 0px 40px 0px;
+  }
 }
 
 .benefits {
@@ -22,7 +25,7 @@
     line-height: 40px;
     @media (max-width: 895px) {
       text-align: center;
-      margin: 0 0 40px 0;
+      margin: 0 0 30px 0;
       font-size: 30px;
 
       line-height: 36px;
@@ -32,7 +35,6 @@
   &__list {
     text-transform: uppercase;
     display: flex;
-    list-style: none;
     flex-wrap: wrap;
     @media (max-width: 895px) {
       flex-wrap: nowrap;
@@ -59,7 +61,10 @@
       font-size: 30px;
       max-width: 257px;
       line-height: 36px;
-      justify-content: center;
+      justify-content: start;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
   }
 
@@ -68,7 +73,6 @@
     line-height: 30px;
     @media (max-width: 895px) {
       font-size: 20px;
-
       line-height: 30px;
     }
   }
@@ -77,7 +81,6 @@
     margin: 0 20px 0 0;
     width: 40px;
     vertical-align: middle;
-
     height: 40px;
   }
 }

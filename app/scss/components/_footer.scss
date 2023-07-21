@@ -1,0 +1,27 @@
+.footer-wrapper {
+  background: #14171a;
+}
+
+.footer {
+  display: flex;
+  padding: 40px 15px;
+  max-width: 1180px;
+  margin: 0 auto;
+  justify-content: space-between;
+  @media (max-width: 400px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+  }
+  &__logo {
+    margin-bottom: 25px;
+  }
+  &__socials {
+    display: flex;
+  }
+  &__social {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
