@@ -13,13 +13,10 @@
     padding: 80px 15px 50px 15px;
   }
 
-  .test {
-    max-width: 540px;
-  }
-
   &__image {
     margin-right: 122px;
-    object-fit: cover;
+    margin: 0px 123px 0px 0px;
+    max-width: 100%;
     @media (max-width: 926px) {
       margin: 0px 0px 0px 0px;
       margin-bottom: 60px;
@@ -40,6 +37,10 @@
     line-height: 40px;
     text-transform: uppercase;
     margin: 0px 0px 28px 0px;
+    @media (max-width: 926px) {
+      font-size: 32px;
+      line-height: 36px;
+    }
   }
 
   &__list {
