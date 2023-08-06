@@ -19,7 +19,12 @@
   &__title {
     text-transform: uppercase;
     margin: 0 130px 0 0;
-
+    opacity: 0;
+    transition: 1s;
+    &.active{
+      transition: 1s;
+      opacity: 1;
+    }
     font-size: 36px;
     font-weight: 700;
     line-height: 40px;
@@ -35,7 +40,16 @@
   &__list {
     text-transform: uppercase;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;   
+    opacity: 0;
+    transform: translate(-10%, 0);
+    transition: 0.8s;
+    &.active{
+      transition: 0.8s;
+
+      opacity: 1;
+      transform: translate(0, 0);
+    }
     @media (max-width: 895px) {
       flex-wrap: nowrap;
       display: block;

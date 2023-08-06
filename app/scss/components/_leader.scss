@@ -7,6 +7,15 @@
   max-width: 1180px;
   margin: 0 auto;
   display: flex;
+  opacity: 0;
+  transform: translate(10%, 0);
+  transition: 0.8s;
+  &.active{
+    transition: 0.8s;
+
+    opacity: 1;
+    transform: translate(0, 0);
+  }
   @media (max-width: 926px) {
     flex-direction: column-reverse;
     align-items: center;

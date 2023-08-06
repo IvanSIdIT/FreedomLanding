@@ -27,6 +27,15 @@
   margin: 0 auto;
   &__content {
     max-width: 746px;
+    opacity: 0;
+    transform: translate(-10%, 0);
+    transition: 0.8s;
+    &.active{
+      transition: 0.8s;
+
+      opacity: 1;
+      transform: translate(0, 0);
+    }
     @media (max-width: 895px) {
       max-width: 546px;
     }

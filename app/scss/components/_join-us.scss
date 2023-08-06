@@ -18,6 +18,15 @@
   padding: 120px 15px;
   max-width: 1180px;
   margin: 0 auto;
+  opacity: 0;
+  transform: translate(0, 10%);
+  transition: 0.8s;
+  &.active {
+    transition: 0.8s;
+
+    opacity: 1;
+    transform: translate(0, 0);
+  }
   @media (max-width: 895px) {
     max-width: 546px;
   }
@@ -25,6 +34,7 @@
     padding: 50px 15px 50px 15px;
     max-width: 540px;
   }
+
   &__subtitle {
     font-size: 18px;
     font-weight: 700;
