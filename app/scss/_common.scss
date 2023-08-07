@@ -7,3 +7,35 @@ ul,
 ol {
   list-style: none;
 }
+
+.modal {
+  z-index: 10;
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  // transform: translate(100% 100%);
+  max-width: 500px;
+  max-height: 500px;
+  padding: 20px;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  background-color: brown;
+  &.active {
+    display: flex;
+  }
+}
+
+.close__btn {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  padding: 5px 15px;
+  background-color: #363636;
+  border: 1px solid #000000;
+  border-radius: 100px;
+}

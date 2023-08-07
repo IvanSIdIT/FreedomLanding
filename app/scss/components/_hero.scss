@@ -22,6 +22,7 @@
 }
 
 .hero {
+  position: relative;
   padding: 0 15px;
   max-width: 1180px;
   margin: 0 auto;
@@ -30,7 +31,7 @@
     opacity: 0;
     transform: translate(-10%, 0);
     transition: 0.8s;
-    &.active{
+    &.active {
       transition: 0.8s;
 
       opacity: 1;
