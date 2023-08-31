@@ -1,0 +1,107 @@
+.hero-wrapper {
+  border: 1px solid #000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 30px 0px 182px 0px;
+  background: radial-gradient(
+      838.19% 378.3% at 69.44% -79.86%,
+      rgba(31, 35, 39, 0) 0%,
+      #191c1f 47.89%,
+      rgba(31, 35, 39, 0) 100%
+    ),
+    url("../images/heroBG.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (max-width: 895px) {
+    padding: 30px 0px 102px 0px;
+  }
+}
+
+.header-wrapper {
+  margin: 0px 0px 125px 0px;
+}
+
+.hero {
+  position: relative;
+  padding: 0 15px;
+  max-width: 1180px;
+  margin: 0 auto;
+  &__content {
+    max-width: 746px;
+    opacity: 0;
+    transform: translate(-10%, 0);
+    transition: 0.8s;
+    &.active {
+      transition: 0.8s;
+
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+    @media (max-width: 895px) {
+      max-width: 546px;
+    }
+  }
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    @media (max-width: 895px) {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+
+  &__title {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 75px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    @media (max-width: 895px) {
+      font-size: 54px;
+      line-height: 65px;
+    }
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 50px;
+    @media (max-width: 895px) {
+      font-size: 20px;
+      line-height: 36px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    width: 247px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 20px;
+    background-color: #e11b19;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+    @media (max-width: 895px) {
+      font-size: 14px;
+      line-height: 22px;
+      width: 221px;
+    }
+
+    &:hover,
+    &:focus {
+      transition: 0.2s;
+      background-color: #c71e1b;
+    }
+  }
+
+  &__arrow {
+    margin: 0px 0px 0px 15px;
+    align-items: center;
+  }
+}
